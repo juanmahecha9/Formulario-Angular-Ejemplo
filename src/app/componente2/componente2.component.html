@@ -1,0 +1,21 @@
+<app-componente1 (enviar)="recibirMensaje($event)" (enviar1)="recibirMensaje1($event)"
+    (enviar2)="recibirMensaje2($event)" (enviar3)="recibirMensaje3($event)" (enviar4)="recibirMensaje4($event)">
+</app-componente1>
+<br>
+<hr>
+<div class="btn">
+    <button (click)="mostrar($event)">MOSTAR</button>
+    <button (click)="ocultar($event)">OCULTAR</button>
+    <button (click)="objetos($event)">Objeto</button>
+</div>
+
+<div class="mostrardatos" [style.display]="isActive ? 'block' : 'none' ">
+    <span>Los Datos Enviados son:</span>
+    <ul>
+        <li>NOMBRE: {{text1}}</li>
+        <li>EDAD: {{text2}}</li>
+        <li>CORREO: {{text3}}</li>
+        <li>TELEFONO: {{text4}}</li>
+        <li>CIUDAD: {{text5}}</li>
+    </ul>
+</div>

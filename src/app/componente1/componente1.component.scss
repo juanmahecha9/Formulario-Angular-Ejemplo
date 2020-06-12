@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Sriracha&display=swap');
+$texto: 'Sriracha', cursive;
+$texto1: 'Annie Use Your Telescope', cursive;
+
+*{
+    color: whitesmoke
+}
+
+p{
+    font-family: $texto;
+    text-align: center;
+    font-size: 25px;
+}
+
+#contenedor {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    border: 1px whitesmoke solid;
+    margin-top: 10px;
+
+    p {
+        width: 100%;
+
+        label {
+            width: 70%;
+            font-family: $texto;
+            font-size: 20px;
+        }
+        
+        input {
+            width: 70%;
+            font-family: $texto1;
+            font-size: 20px;
+            color: black;
+            padding-left: 5px;
+        }
+    }
+
+    button {
+        width: 70%;
+        padding: 5px;
+        margin-bottom: 10px;
+        font-family: $texto1;
+            font-size: 20px;
+            background-color: red;
+            &:hover{
+                background-color: rgb(104, 0, 0);
+            }
+    }
+}

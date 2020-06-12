@@ -1,0 +1,29 @@
+<p class="titulo">FORMULARIO DE REGISTRO</p>
+<div id="contenedor">
+    <p>
+        <label for="nombre">NOMBRE: </label>
+        <br>
+        <input   mdInput   type="text" (input)="texto = $event.target.value" placeholder="NOMBRE"   >
+    </p>
+    <p>
+        <label for="edad">EDAD: </label>
+        <br>
+        <input  type="text" (input)="texto1 = $event.target.value" placeholder="EDAD">
+    </p>
+    <p>
+        <label for="correo">CORREO: </label>
+        <br>
+        <input  type="text" (input)="texto2 = $event.target.value" placeholder="CORREO">
+    </p>
+    <p>
+        <label for="telefono">TELEFONO: </label>
+        <br>
+        <input  (input)="texto3 = $event.target.value" placeholder="TELEFONO">
+    </p>
+    <p>
+        <label for="ciudad">CIUDAD: </label>
+        <br>
+        <input  (input)="texto4 = $event.target.value" placeholder="CIUDAD">
+    </p>
+    <button (click)="btnEnviar()" >ENVIAR</button>
+</div>
